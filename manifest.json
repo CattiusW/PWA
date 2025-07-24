@@ -1,0 +1,41 @@
+{
+  "name": "X",
+  "short_name": "X",
+  "description": "Strategic tic-tac-toe with AI that thinks 6 moves ahead. Can you beat the AI on hard mode?",
+  "start_url": "/PWA",
+  "display": "standalone",
+  "background_color": "#1E2233",
+  "theme_color": "#337AFF",
+  "orientation": "portrait-primary",
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "ultimate",
+  "icons": [
+    {
+      "src": "x.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/screenshot-narrow.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Ultimate Tic-Tac-Toe gameplay on mobile"
+    },
+    {
+      "src": "./assets/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Ultimate Tic-Tac-Toe gameplay on desktop"
+    }
+  ],
+
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel":
