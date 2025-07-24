@@ -1,13 +1,32 @@
 <head> 
-    <link rel="apple-touch-icon" href="X.png">
-
-    <link rel="icon" type="image/x-icon" href="X.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#337AFF">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="X">
+  <link rel="apple-touch-icon" href="X.png">
+  <link rel="icon" type="image/x-icon" href="X.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#337AFF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="X">
 </head>
-<script>
-    window.location.replace("https://cassius.is-a.dev?roll")
-</script>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.has('setup')) {
+      document.body.innerHTML = `
+        <div style="padding: 20px; font-family: sans-serif; text-align: center;">
+          <h2>📲 Install the App</h2>
+          <p>To add this app to your home screen:</p>
+          <ul style="text-align: left; display: inline-block; margin-top: 10px;">
+            <li>Open this site in Safari on your iPhone or iPad</li>
+            <li>Tap the <strong>Share</strong> icon (bottom of the screen)</li>
+            <li>Select <strong>Add to Home Screen</strong></li>
+            <li>Tap <strong>Add</strong> to finish!</li>
+          </ul>
+          <img src="X.png" alt="App Icon Preview" style="width:100px; margin-top: 20px;">
+        </div>
+      `;
+    } else {
+      window.location.replace("https://cassius.is-a.dev?roll");
+    }
+  </script>
+</body>
