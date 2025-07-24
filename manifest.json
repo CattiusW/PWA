@@ -14,9 +14,9 @@
   "id": "ultimate",
   "icons": [
     {
-      "src": "x.jpeg",
+      "src": "X.png",
       "sizes": "180x180",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
   ],
   "screenshots": [
