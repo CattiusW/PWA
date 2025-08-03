@@ -13,7 +13,9 @@
 
     if (urlParams.has('setup')) {
       urlParams.delete('setup')
-      document.body.innerHTML = `
+      url.search = params.toString();
+window.history.replaceState({}, '', url.toString());
+document.body.innerHTML = `
         <div style="padding: 20px; font-family: sans-serif; text-align: center;">
           <h2>📲 Install the App</h2>
           <p>To add this app to your home screen:</p>
