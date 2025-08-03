@@ -12,6 +12,7 @@
     const urlParams = new URLSearchParams(window.location.search);
 
     if (urlParams.has('setup')) {
+      urlParams.remove('setup')
       document.body.innerHTML = `
         <div style="padding: 20px; font-family: sans-serif; text-align: center;">
           <h2>📲 Install the App</h2>
